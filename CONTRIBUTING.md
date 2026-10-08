@@ -1,30 +1,14 @@
 # Contributing
 
-Everyone here is learning. Contributions are welcome, including typo fixes.
+Help make this curriculum clearer for new learners. Small improvements—fixing a typo, defining a term, or adding a safe example—are welcome.
 
-## The workflow (this is how real teams work)
+- Write for a curious beginner around age 16. Define jargon when first used.
+- Explain why a concept matters, not only how to type it.
+- Keep examples runnable on Python 3.10+ and follow PEP 8.
+- Add inline comments explaining every line in teaching examples.
+- Include at least five exercises per concept: two easy, two medium, and one creative challenge. Put expected-output examples in comments.
+- Keep solutions under the module's solutions folder so learners can try first.
+- Prefer safe local examples; clearly label optional packages and network requirements. Never include credentials or personal information.
+- For a change, read the module as a beginner, check spelling, links, and expected output, and explain what changed.
 
-1. Fork the repo (or get added as a collaborator)
-2. Make a branch: `git checkout -b add-lesson-files`
-3. Make your changes
-4. Run the tests: `CHECK_SOLUTIONS=1 pytest` (Windows PowerShell: `$env:CHECK_SOLUTIONS=1; pytest`)
-5. Commit with a clear message: `git commit -m "Add file reading lesson"`
-6. Push and open a Pull Request
-7. A friend reviews it. Be kind, be specific, ask questions.
-
-## Adding a lesson
-
-Copy the structure of `01-basics/`:
-`README.md`, `examples.py`, `exercises.py`, `test_exercises.py`, `solutions.py`
-
-Rules of thumb:
-- 20-30 minutes per lesson
-- Use examples teens care about (games, music, sports, social media)
-- Every exercise needs a test, and every test must pass against `solutions.py`
-- Mark difficulty with ⭐ / ⭐⭐ / ⭐⭐⭐
-
-## Code review checklist
-- Does it run?
-- Would a beginner understand the explanation?
-- Are variable names clear?
-- Do the tests pass?
+Small, focused contributions are easiest to review. Ask for feedback before making a large change.
